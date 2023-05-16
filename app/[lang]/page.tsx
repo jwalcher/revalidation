@@ -30,9 +30,7 @@ export default async function Page({ params }: { params: { lang: string } }) {
           : "language not supported "}
         {stamp}
       </h1>
-      <h2>
-        dynamic route
-      </h2>
+      <h2>dynamic route</h2>
     </>
   );
 }
