@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "L'heure a Amsterdam",
+  title: "L'heure à Amsterdam",
 };
 
 export default async function Page() {

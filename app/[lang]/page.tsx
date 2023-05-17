@@ -16,7 +16,6 @@ export function generateMetadata({ params }: { params: { lang: string } }) {
 
 export default async function Page({ params }: { params: { lang: string } }) {
   const res = await fetch("https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam");
-
   const data = (await res.json()) as { hour: number; minute: number; seconds: number };
   const stamp = data.hour + ":" + data.minute + ":" + data.seconds;
 
